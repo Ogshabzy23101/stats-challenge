@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: hsl(233, 47%, 7%);
+}
+.container {
+  display: flex;
+  margin: auto;
+  background-color: hsl(244, 38%, 16%);
+}
+
+.text {
+  width: 50%;
+  padding: 5%;
+}
+.upper-text h1 {
+  font-family: Lexend Deca;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 100%);
+}
+.upper-text p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: lexend deca;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 2;
+}
+.upper-text {
+  margin-bottom: 15%;
+}
+#insights {
+  color: hsl(277, 64%, 61%);
+}
+.lower-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: auto;
+}
+.lower-text h1 {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: inter;
+}
+.lower-text p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: lexend deca;
+}
+
+.image {
+  width: 50%;
+  overflow: hidden;
+  background-color: hsl(277, 64%, 61%);
+}
+.image img {
+  mix-blend-mode: overlay;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  
+  
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+@media screen and (max-width: 1040px) {
+main{
+    height: max-content;
+    padding-top:3%;
+    padding-bottom: 3%;
+}
+    
+  .container{
+      column-count: 1;
+      flex-direction: column-reverse;
+  }
+  .text{
+      width: 100%;
+      text-align: center;
+  }
+  .upper-text h1 {line-height: normal;
+      font-size: 30px;
+  }
+  .upper-text p{
+      font-size: 16px;
+      line-height: normal;
+  }
+  .lower-text{
+      display: block;
+      margin: 0%;
+      font-size: x-large;
+  }
+  .lowe-t{
+      margin-top: 30px;
+  }
+  .lowe-t h1{
+      font-size: 32px;
+  }
+  .lowe-t p{
+      font-weight: 400;
+      font-size: 16px;
+  }
+  .image{
+      width: 100%;
+      height: 20%;
+      overflow: hidden;
+  }
+  .image img{
+      height: 100%;
+      object-fit: fill;
+  }
+ 
+}
+
